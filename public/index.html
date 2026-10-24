@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Job Queue Home</title>
+    <meta name="viewport" content="width=devic-width, initial-scale=1.0"/>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      form input {
+        width: 200px;
+      }
+      
+      form input[type=submit] {
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <form method="post" action="/jobs">
+      <input name="type" placeholder="type"/>
+      <input name="payload" placeholder="payload"/>
+      <input type="submit" value="Submit"/>
+    </form>
+    
+    <a href="/jobs">View Jobs</a>
+  </body>
+</html>
