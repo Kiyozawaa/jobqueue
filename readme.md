@@ -1,7 +1,7 @@
-#Job Queue System
+# Job Queue System
 A backend job queue system built with Node.js, Express, and PostgreSQL to process background tasks asynchronously. Features include multiple independent workers, atomic job claiming using PostgreSQL's "FOR UPDATE SKIP LOCKED", job status tracking, lease-based recovery, and claim versioning to prevent stale workers from modifying jobs they no longer own.
 
-##Features
+## Features
 - Asynchronous background job processing
 - Multiple independent worker processes
 - Atomic job claiming
@@ -10,13 +10,13 @@ A backend job queue system built with Node.js, Express, and PostgreSQL to proces
 - Claim versions to prevent stale workers to update jobs
 
 
-##Tech Stack
+## Tech Stack
 - Javascript (Node.js)
 - Express.js
 - PostgreSQL
 
 
-##Setup
+## Setup
 
 1. Clone the repository.
 
@@ -45,10 +45,9 @@ npm start
 node server/worker.js
 ```
 You can start multiple worker instances in separate terminals to process jobs concurrently. Adjust the worker path if your project uses a different directory structure. You can also give workers a name to distinguish them.
-```
 
 
-##Current Limitations
+## Current Limitations
 - Error handling and failure recovery could be improved.
 - No dedicated user interface.
 
